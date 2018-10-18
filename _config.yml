@@ -29,16 +29,16 @@ SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagr
   weixin: '' # 你的微信二维码存放的地址
   qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
   github: ''
-  Codepen: ''
+#  Codepen: ''
   weibo: ''
-  instagram: ''
-  Twitter: ''
-  Dribbble: ''
-  Facebook: ''
-  Google: ''
+#  instagram: ''
+#  Twitter: ''
+#  Dribbble: ''
+#  Facebook: ''
+#  Google: ''
   zhihu: ''
-  juejin: ''
-  twitch: ''
+#  juejin: ''
+#  twitch: ''
 
 # 分页
 paginate: 2
