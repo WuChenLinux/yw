@@ -17,9 +17,9 @@ author: true
 name: '邬晨'
 NickName: 'your awesome nickname'
 webtitle: '我就试试能不能打中文'
-bio: '一个老年人'
+bio: '一个不断学习的小运维'
 about: true
-aboutyou: 'your introduction'
+aboutyou: '分享自己的学习笔记与心得把~'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
