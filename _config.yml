@@ -1,7 +1,7 @@
 # Site settings 配置站点
 title: '一个慢慢进步的人'
 description: '记录，进步'
-keywords: '学习，运维'
+keywords: '笔记，运维'
 url: 'http://www.blog-wuchen.cn' # your host
 
 # nav 中文字符空格：&emsp;
