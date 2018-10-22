@@ -4,7 +4,7 @@ title: 'ZooKeeper'
 date: 2018-10-19
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'http://on2171g4d.bkt.clouddn.com/jekyll-banner.png'
+cover: 'https://bing.ioliu.cn/v1/rand?w=900&h=300'
 tags: ZooKeeper
 ---
 
