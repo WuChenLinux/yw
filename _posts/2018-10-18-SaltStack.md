@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'SaltStack'
+title: 'SaltStack的安装与应用'
 date: 2018-10-18
 author: 邬晨
 color: rgb(255,210,32)

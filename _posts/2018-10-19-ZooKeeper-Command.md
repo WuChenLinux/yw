@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'ZooKeeper'
+title: 'ZooKeeper四字命令'
 date: 2018-10-19
 author: 邬晨
 color: rgb(255,210,32)
