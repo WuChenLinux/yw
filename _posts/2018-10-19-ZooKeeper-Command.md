@@ -13,9 +13,9 @@ tags: ZooKeeper
 > 四字命令查看Zookeeper运行相关信息,极其好用
 
 ### 使用方法
-
-**echo 'command'|nc ip port**
-
+```shell
+echo 'command'|nc ip port
+```
  最小化系统安装是没有nc的
 
 ```shell
