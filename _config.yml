@@ -26,17 +26,17 @@ portraits: '/assets/profile.jpeg' # your portraits image file path
 SNS: true
 SNS-icon: #['Facebook', 'weibo', 'qq', 'github', 'Dribbble', 'Twitter', 'instagram', 'weixin', 'Codepen']
   mail: 'mailto:1156858764@qq.com'
-  weixin: '' # 你的微信二维码存放的地址
-  qq: '' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='你的QQ号'&site=qq&menu=yes
+  weixin: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/Wechat.JPG' #你的微信二维码存放的地址
+  qq: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/QQ.JPG' # 你的qq二维码存放的地址 or http://wpa.qq.com/msgrd?v=3&uin='1156858764'&site=qq&menu=yes
   github: ''
 #  Codepen: ''
-  weibo: ''
+  weibo: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/weibo.png'
 #  instagram: ''
 #  Twitter: ''
 #  Dribbble: ''
 #  Facebook: ''
 #  Google: ''
-  zhihu: ''
+  zhihu: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/zhihu.png'
 #  juejin: ''
 #  twitch: ''
 
