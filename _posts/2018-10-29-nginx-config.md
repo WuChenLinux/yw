@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Prometheus监控k8s‘'
+title: 'nginx解读'
 date: 2018-10-29
 author: 邬晨
 color: rgb(255,210,32)
