@@ -4,7 +4,7 @@ title: 'Prometheus监控k8s'
 date: 2018-11-19
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'https://bing.ioliu.cn/v1/rand?w=900&h=300'
+cover: 'https://open.saintic.com/api/bingPic/'
 tags: Prometheus
 ---
 
