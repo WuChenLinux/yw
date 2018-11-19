@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'logstash配置'
-date: 2018-11-19
+date: 2018-10-22
 author: 邬晨
 color: rgb(255,210,32)
 cover: 'https://bing.ioliu.cn/v1/rand?w=900&h=300'
