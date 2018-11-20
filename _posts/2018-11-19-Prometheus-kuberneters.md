@@ -47,6 +47,7 @@ kubectl apply -f kubernetes
 > 暂时没有挂载数据盘~所以重启数据就没了哈哈哈哈哈
 >
 > yaml奉上~
+> https://github.com/prometheus/prometheus/blob/release-2.5/documentation/examples/prometheus-kubernetes.yml
 
 ```yaml
 ---
@@ -727,4 +728,6 @@ Prometheus运算符：[传送门](https://prometheus.io/docs/prometheus/latest/q
 Prometheus查询：[传送门](https://github.com/prometheus/prometheus/blob/master/docs/querying/)
 
 Alertmanager规则：[传送门](https://prometheus.io/docs/alerting/configuration/)
+
+Prometheus 元数据标签：[传送门](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config)
 
