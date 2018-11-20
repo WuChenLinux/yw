@@ -48,6 +48,8 @@ kubectl apply -f kubernetes
 >
 > yaml奉上~
 > [官方模板](https://github.com/prometheus/prometheus/blob/release-2.5/documentation/examples/prometheus-kubernetes.yml)
+>
+> [元数据标签](https://prometheus.io/docs/prometheus/latest/configuration/configuration/#kubernetes_sd_config)
 
 ```yaml
 ---
