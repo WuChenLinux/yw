@@ -47,7 +47,7 @@ kubectl apply -f kubernetes
 > 暂时没有挂载数据盘~所以重启数据就没了哈哈哈哈哈
 >
 > yaml奉上~
-> https://github.com/prometheus/prometheus/blob/release-2.5/documentation/examples/prometheus-kubernetes.yml
+> [官方模板](https://github.com/prometheus/prometheus/blob/release-2.5/documentation/examples/prometheus-kubernetes.yml)
 
 ```yaml
 ---
@@ -600,7 +600,7 @@ inhibit_rules:                               #抑制规则
 
 ![1542633257109](https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-19-Prometheus/20181119211421.png)
 
-![1542633308749](C:\Users\11568\AppData\Roaming\Typora\typora-user-images\1542633308749.png)
+![1542633308749](https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-19-Prometheus/1542633308749.png)
 
 嗯，这个报警的红绿灯也挺好玩的
 
