@@ -88,7 +88,7 @@ regex: 任何有效的RE2正则表达式   # default = (.*)
 
 action: 动作   #分为replace(默认)，keep，drop，labelmap，labeldrop和labelkeep
 
-#replace: 如果正则表达式与source_labels匹配。则将target_label或者replacement替换为source_labels的值！！！($1,$2,...),如果正则表达式不匹配, 则不会进行替换
+#replace: 如果正则表达式与source_labels匹配。则将target_label和replacement替换为source_labels的值！！！($1,$2,...),如果正则表达式不匹配, 则不会进行替换
 #keep: 如果正则能匹配上，则只！！！保留source_labels值！！！ 不匹配的都会被丢弃
 #drop: 如果正则能匹配上，则删除source_labels值
 #labelmap: 正则匹配标签名称。然后复制标签的值来标记给replacement（$1,$2,...）
