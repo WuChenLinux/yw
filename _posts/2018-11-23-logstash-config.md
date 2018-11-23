@@ -71,7 +71,11 @@ output.kafka:
 
 logstash：[官方if示例](https://www.elastic.co/guide/en/elastic-stack-get-started/6.5/get-started-elastic-stack.html#logstash-filter)
 
-**你如果实在不知道自己可以判断什么字段，你就什么都别加，看logstash的日志输出去**
+**你如果实在不知道自己可以判断什么字段，你就什么都别加，**
+
+**看logstash的日志输出也行**
+
+**去看kibana的索引字段都有哪些也行**
 
 ```shell
 #######################配置从Kafka输入###########################################
