@@ -4,7 +4,7 @@ title: 'Kafka安装与配置解读'
 date: 2018-10-20
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'https://bing.ioliu.cn/v1/rand?w=900&h=300'
+cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/10-20-Prometheus-rules/ChiribiqueteNP_ZH-CN10719426351_1920x1080.jpg'
 tags: Kafka
 ---
 

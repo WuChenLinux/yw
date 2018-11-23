@@ -4,7 +4,7 @@ title: 'filebeat-k8s配置'
 date: 2018-10-22
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'https://bing.ioliu.cn/v1/rand?w=900&h=300'
+cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/10-22/SpiritBearSleeps_ZH-CN7690026884_1920x1080.jpg'
 tags: ELK
 ---
 

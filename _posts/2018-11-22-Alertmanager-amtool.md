@@ -4,7 +4,7 @@ title: 'alertmanager 沉默规则'
 date: 2018-11-22
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'https://open.saintic.com/api/bingPic/'
+cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-22-alertmanager-amtool/EibseeHerbst_ZH-CN9383344658_1920x1080.jpg'
 tags: Prometheus
 ---
 

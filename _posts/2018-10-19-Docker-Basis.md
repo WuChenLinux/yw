@@ -4,7 +4,7 @@ title: 'Docker基础'
 date: 2018-10-19
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'https://bing.ioliu.cn/v1/rand?w=900&h=300'
+cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/10-19/EcolaSP_ZH-CN10746626161_1920x1080.jpg'
 tags: Docker
 ---
 

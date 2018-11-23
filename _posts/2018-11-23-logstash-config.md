@@ -4,7 +4,7 @@ title: 'logstash 简单用法'
 date: 2018-11-23
 author: 邬晨
 color: rgb(255,210,32)
-cover: 'https://open.saintic.com/api/bingPic/'
+cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-23/VarennaSnow_ZH-CN7673479242_1920x1080.jpg'
 tags: ELK
 ---
 
