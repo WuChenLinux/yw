@@ -1,21 +1,22 @@
 ---
 layout: post
-title: 'alertmanager ³ÁÄ¬¹æÔò'
+title: 'alertmanager æ²‰é»˜è§„åˆ™'
 date: 2018-11-22
-author: Úù³¿
+author: é‚¬æ™¨
 color: rgb(255,210,32)
 cover: 'https://open.saintic.com/api/bingPic/'
 tags: Prometheus
 ---
-# alertmanager ³ÁÄ¬¹æÔò
 
-> ½ñÌìÓÃµ½ÁËÕâ¸ö³ÁÄ¬¹æÔò£¬¼ÇÂ¼ÏÂ 
->
-> Ê¹ÓÃµÄÊÇ¹Ù·½docker¾µÏñ£ºhttps://hub.docker.com/r/prom/alertmanager/
->
-> ¹Ù·½githubµØÖ·:  https://github.com/prometheus/alertmanager   
+# alertmanager æ²‰é»˜è§„åˆ™
 
-docker hub ÉÏµÄ¼Ü¹¹Í¼¹ş¹ş¹ş¹ş¹ş
+> ä»Šå¤©ç”¨åˆ°äº†è¿™ä¸ªæ²‰é»˜è§„åˆ™ï¼Œè®°å½•ä¸‹ 
+>
+> ä½¿ç”¨çš„æ˜¯å®˜æ–¹dockeré•œåƒï¼šhttps://hub.docker.com/r/prom/alertmanager/
+>
+> å®˜æ–¹githubåœ°å€:  https://github.com/prometheus/alertmanager   
+
+docker hub ä¸Šçš„æ¶æ„å›¾å“ˆå“ˆå“ˆå“ˆå“ˆ
 
 ![1542879471951](https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-22-alertmanager-amtool/1542879471951.png)
 
@@ -23,32 +24,32 @@ docker hub ÉÏµÄ¼Ü¹¹Í¼¹ş¹ş¹ş¹ş¹ş
 
 
 
-ÈİÆ÷Æô¶¯Ö®ºó£¬½øÈëµ½ÈİÆ÷ÖĞ
+å®¹å™¨å¯åŠ¨ä¹‹åï¼Œè¿›å…¥åˆ°å®¹å™¨ä¸­
 
 ```shell
-#×îÖØÒªµÄ¶«Î÷£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡£¡
-#Ö®Ç°Ö»ÊÇ¼òµ¥µÄ amtool -hÁË£¬°¥ĞÄÌÛ×Ô¼º
+#æœ€é‡è¦çš„ä¸œè¥¿ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼ï¼
+#ä¹‹å‰åªæ˜¯ç®€å•çš„ amtool -häº†ï¼Œå“å¿ƒç–¼è‡ªå·±
 amtool --help-long
 ```
 
-ÅäÖÃÎÄ¼şµØÖ·
+é…ç½®æ–‡ä»¶åœ°å€
 
 ```shell
 cat /etc/amtool/config.yml   
 
-#alertmanagerµØÖ·,ÕâÀï¶¨ÒåÁËÖ®ºóÃüÁîĞĞÖĞ¿ÉÒÔ²»´ø --alertmanager.url="http://127.0.0.1:9093"
+#alertmanageråœ°å€,è¿™é‡Œå®šä¹‰äº†ä¹‹åå‘½ä»¤è¡Œä¸­å¯ä»¥ä¸å¸¦ --alertmanager.url="http://127.0.0.1:9093"
 alertmanager.url: "http://localhost:9093"
 
-#Ìá½»ÈË
+#æäº¤äºº
 author: wuchen
 
-#ÊÇ·ñĞèÒª±¸×¢²ÅÄÜÌá½»£¬Ä¬ÈÏtrue£º±ØĞëÒª±¸×¢
+#æ˜¯å¦éœ€è¦å¤‡æ³¨æ‰èƒ½æäº¤ï¼Œé»˜è®¤trueï¼šå¿…é¡»è¦å¤‡æ³¨
 comment_required: false
 
-#ÉèÖÃÄ¬ÈÏÊä³ö¸ñÊ½
+#è®¾ç½®é»˜è®¤è¾“å‡ºæ ¼å¼
 output: extended
 
-#Ä¬ÈÏ½ÓÊÕÆ÷£¬²âÊÔÊ±ºò¿ÉÒÔÓÃ
+#é»˜è®¤æ¥æ”¶å™¨ï¼Œæµ‹è¯•æ—¶å€™å¯ä»¥ç”¨
 receiver: webhook
 ```
 
@@ -56,38 +57,38 @@ receiver: webhook
 
 
 ```shell
-#²é¿´µ±Ç°ÒÑ´¥·¢µÄ±¨¾¯
+#æŸ¥çœ‹å½“å‰å·²è§¦å‘çš„æŠ¥è­¦
 amtool alert --alertmanager.url="http://127.0.0.1:9093"
 
-#²é¿´ËùÓĞ³ÁÄ¬
+#æŸ¥çœ‹æ‰€æœ‰æ²‰é»˜
 amtool silence query --alertmanager.url="http://127.0.0.1:9093"
 
-#²é¿´Æ¥ÅäµÄ³ÁÄ¬
+#æŸ¥çœ‹åŒ¹é…çš„æ²‰é»˜
 amtool silence query alertname=PodMemory  --alertmanager.url="http://127.0.0.1:9093"
 
 
-#³ÁÄ¬Ìí¼Ó£¬Èç¹ûcomment_requiredÉèÖÃÎªtrue£¬²»Ğ´commentµÄ»°»áÌá½»²»ÉÏ
-#alertname¾ÍÊÇPrometheusÄÇÀïÉèÖÃµÄalert
-#--start ÉúĞ§Ê±¼ä
-#--end   ½áÊøÊ±¼ä
+#æ²‰é»˜æ·»åŠ ï¼Œå¦‚æœcomment_requiredè®¾ç½®ä¸ºtrueï¼Œä¸å†™commentçš„è¯ä¼šæäº¤ä¸ä¸Š
+#alertnameå°±æ˜¯Prometheusé‚£é‡Œè®¾ç½®çš„alert
+#--start ç”Ÿæ•ˆæ—¶é—´
+#--end   ç»“æŸæ—¶é—´
 amtool silence add alertname="PodMemory" container_name="elasticsearch" --start="2019-01-02T15:04:05+08:00" --end="2019-01-02T15:05:05+08:00" --comment="test"  -a "wuchen" --alertmanager.url="http://127.0.0.1:9093"
 
-#docker¹Ù·½¾µÏñ£¬Ä¬ÈÏÊı¾İÔ´±£´æÔÚ/alertmanager£¬ËùÒÔÒª¹ÒÔØÊı¾İÅÌ£¬²»È»ÈİÆ÷ÖØÆôÒ»ÇĞ¶¼°××ö
+#dockerå®˜æ–¹é•œåƒï¼Œé»˜è®¤æ•°æ®æºä¿å­˜åœ¨/alertmanagerï¼Œæ‰€ä»¥è¦æŒ‚è½½æ•°æ®ç›˜ï¼Œä¸ç„¶å®¹å™¨é‡å¯ä¸€åˆ‡éƒ½ç™½åš
 
-#ÒòÎª²é¿´³ÁÄ¬ÁĞ±íµÄÊ±ºò£¬ÉúĞ§Ê±¼äÊä³öµÄ²»ÍêÕû£¬ËùÒÔ¿ÉÒÔ
+#å› ä¸ºæŸ¥çœ‹æ²‰é»˜åˆ—è¡¨çš„æ—¶å€™ï¼Œç”Ÿæ•ˆæ—¶é—´è¾“å‡ºçš„ä¸å®Œæ•´ï¼Œæ‰€ä»¥å¯ä»¥
 amtool silence query -o json --alertmanager.url="http://127.0.0.1:9093"
-#»¹¿ÉÒÔµ¼³öjsonÊı¾İ
+#è¿˜å¯ä»¥å¯¼å‡ºjsonæ•°æ®
 amtool silence query -o json PodMemory > 1.json --alertmanager.url="http://127.0.0.1:9093"
 
-#³ÁÄ¬½â³ı
+#æ²‰é»˜è§£é™¤
 amtool silence expire 8188b168-1332-4398-83a5-a9df4263c60d --alertmanager.url="http://127.0.0.1:9093"
 
-#½â³ıËùÓĞ³ÁÄ¬
+#è§£é™¤æ‰€æœ‰æ²‰é»˜
 amtool silence expire $(amtool silence query -q --alertmanager.url="http://127.0.0.1:9093") --alertmanager.url="http://127.0.0.1:9093"
 
 
 ```
 
-¹ÙÍø¾µÏñÊÇ°ÑÊı¾İÔ´ÉèÖÃµ½ÁË/alertmanager£¬ÎÒÃÇ¹ÒÔØÒ»¸öÊı¾İÅÌµ½Õâ¸öÄ¿Â¼¾ÍºÃÁË£¬²»È»ÈİÆ÷ÖØÆôºó£¬Ò»ÇĞ²Ù×÷¶¼Ã»ÁË¡£
+å®˜ç½‘é•œåƒæ˜¯æŠŠæ•°æ®æºè®¾ç½®åˆ°äº†/alertmanagerï¼Œæˆ‘ä»¬æŒ‚è½½ä¸€ä¸ªæ•°æ®ç›˜åˆ°è¿™ä¸ªç›®å½•å°±å¥½äº†ï¼Œä¸ç„¶å®¹å™¨é‡å¯åï¼Œä¸€åˆ‡æ“ä½œéƒ½æ²¡äº†ã€‚
 
-àÅ£¬¾Í¼ÇÂ¼ÏÂ¡£
+å—¯ï¼Œå°±è®°å½•ä¸‹ã€‚
