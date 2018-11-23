@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'logstash 简单用法'
-date: 2018-11-22
+date: 2018-11-23
 author: 邬晨
 color: rgb(255,210,32)
 cover: 'https://open.saintic.com/api/bingPic/'
