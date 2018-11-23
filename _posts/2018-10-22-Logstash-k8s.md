@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'logstash配置'
+title: 'logstash 配置'
 date: 2018-10-22
 author: 邬晨
 color: rgb(255,210,32)

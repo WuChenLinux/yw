@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'filebeat-k8s配置'
+title: 'filebeat-k8s 配置'
 date: 2018-10-22
 author: 邬晨
 color: rgb(255,210,32)

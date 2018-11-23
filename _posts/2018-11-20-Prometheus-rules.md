@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Prometheus告警规则'
+title: 'Prometheus 告警规则'
 date: 2018-11-20
 author: 邬晨
 color: rgb(255,210,32)

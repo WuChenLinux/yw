@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Kafka 配置解读'
+title: 'Kafka 安装与配置解读'
 date: 2018-10-20
 author: 邬晨
 color: rgb(255,210,32)

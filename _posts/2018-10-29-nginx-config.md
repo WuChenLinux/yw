@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'nginx解读'
+title: 'nginx 配置解读'
 date: 2018-10-29
 author: 邬晨
 color: rgb(255,210,32)
