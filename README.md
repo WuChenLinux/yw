@@ -4,17 +4,13 @@
 
 ### Preview
 
-[在线预览 view demo →](http://xseven.me/)
+[在线预览 view demo →](https://www.blog-wuchen.cn/)
 
 ![1](/screenshot/1.png)
 
 ![2](/screenshot/2.png)
 
 ![3](/screenshot/3.png)
-
-想要查看手机端显示效果，扫描下方二维码浏览器打开即可
-
-![4](/screenshot/4.png)
 
 
 
