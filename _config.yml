@@ -1,7 +1,7 @@
 # Site settings 配置站点
-title: 无尘'
-description: '记录，进步'
-keywords: '笔记，运维'
+title: '无尘'
+description: '所见即所得'
+keywords: '笔记，运维，分享'
 url: 'http://www.blog-wuchen.cn' # your host
 
 # nav 中文字符空格：&emsp;
