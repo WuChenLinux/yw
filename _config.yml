@@ -1,5 +1,5 @@
 # Site settings 配置站点
-title: '一个慢慢进步的人'
+title: 无尘'
 description: '记录，进步'
 keywords: '笔记，运维'
 url: 'http://www.blog-wuchen.cn' # your host
@@ -19,7 +19,7 @@ NickName: 'wuchen'
 webtitle: '1024'
 bio: '一个不断学习的小运维'
 about: true
-aboutyou: '分享自己的学习笔记与心得把~'
+aboutyou: '分享自己的知识与心得把~'
 portraits: '/assets/profile.jpeg' # your portraits image file path
 
 # SNS
