@@ -73,6 +73,10 @@ amtool silence query alertname=PodMemory  --alertmanager.url="http://127.0.0.1:9
 #--end   结束时间
 amtool silence add alertname="PodMemory" container_name="elasticsearch" --start="2019-01-02T15:04:05+08:00" --end="2019-01-02T15:05:05+08:00" --comment="test"  -a "wuchen" --alertmanager.url="http://127.0.0.1:9093"
 
+#更新
+amtool silence update --end="2019-02-02T15:05:05+08:00"  6cac2b37-4ce2-4af5-8305-9f47850d72a4  --alertmanager.url="http://127.0.0.1:9093"
+
+
 #docker官方镜像，默认数据源保存在/alertmanager，所以要挂载数据盘，不然容器重启一切都白做
 
 #因为查看沉默列表的时候，生效时间输出的不完整，所以可以
