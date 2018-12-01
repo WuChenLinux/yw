@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 'nginx二级目录跳转'
+title: 'nginx二级目录跳转和LDAP认证'
 date: 2018-11-29
 author: 邬晨
 color: rgb(255,210,32)
 cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-29/FrankfurtXmas_ZH-CN9289866662_1920x1080.jpg'
-tags: nginx
+tags: nginx，LDAP
 ---
 
-# nginx二级目录跳转
+# nginx二级目录跳转 和 LDAP认证
 
 > 使用kubernetes之后，运维自己这边的项目，如果每个都映射一个公网IP的话，不是那么的友好，所以通过nginx 二级目录的形式，来跳转一下
 >
@@ -68,8 +68,8 @@ events {
 	types_hash_max_size 2048;
 
 	ldap_server openldap {
-		url ldap://x.x.x.x:389/dc=blog-wuchen,dc=com?uid?sub?(&(objectClass=*)); #地址
-		binddn "cn=admin,dc=blog-wuchen,dc=com";        #用户名
+		url ldap://x.x.x.x:389/dc=blog-wuchen,dc=cn?uid?sub?(&(objectClass=*)); #地址
+		binddn "cn=Manager,dc=blog-wuchen,dc=cn";        #用户名
 		binddn_passwd "000000";                  #密码
 		group_attribute memberuid;
 		group_attribute_is_dn on;
