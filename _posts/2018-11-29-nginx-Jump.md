@@ -5,7 +5,7 @@ date: 2018-11-29
 author: 邬晨
 color: rgb(255,210,32)
 cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/11-29/FrankfurtXmas_ZH-CN9289866662_1920x1080.jpg'
-tags: nginx，LDAP
+tags: nginx LDAP
 ---
 
 # nginx二级目录跳转 和 LDAP认证
