@@ -12,6 +12,7 @@ tags: ELK
 
 > 日志收集完，可以根据需求来进行日志的一个报警，这里用的kibana的插件sentinl
 
+
 ## 安装插件
 
 GitHub地址：<https://github.com/sirensolutions/sentinl/>
