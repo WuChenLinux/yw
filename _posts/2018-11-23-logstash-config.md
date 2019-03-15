@@ -85,6 +85,8 @@ input {
     group_id => "logstash"             #如果配置多个logstash，要保持一致，详见官网
     topics => ["ca-pro", "ca-pre", "execute-time"] #可以配置多个
     codec => "json"
+    consumer_threads => "4"
+    client_id =>  "logstash01"
   }
 }
 ########################配置过滤############################################
@@ -172,4 +174,6 @@ output {
 
 PS1: logstash是可以写多个文件的，还是建议写在多个文件中，比较清晰
 
-PS2: 请结合实际环境
+PS2: 正则的效率非常低
+
+PS3: 请结合实际环境
