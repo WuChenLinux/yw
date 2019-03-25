@@ -86,7 +86,7 @@ input {
     topics => ["ca-pro", "ca-pre", "execute-time"] #可以配置多个
     codec => "json"
     consumer_threads => "4"
-    client_id =>  "logstash01"
+    client_id =>  "logstash01"           #每个input不同
   }
 }
 ########################配置过滤############################################
