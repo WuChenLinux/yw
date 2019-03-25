@@ -8,7 +8,11 @@ cover: 'https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/2019-03-15/th
 tags: ELK
 ---
 
+
+
 # kibana sentinl插件报警
+
+
 
 > 日志收集完，可以根据需求来进行日志的一个报警，这里用的kibana的插件sentinl
 
