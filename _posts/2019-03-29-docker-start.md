@@ -38,3 +38,7 @@ docker run --name redis -p 6379:6379 -v /opt/data/redis:/data -d --restart=alway
 docker run --name memcache -p 11211:11211 -d --restart=always memcached memcached -m 512
 ```
 
+## consul
+```shell
+docker run -d --net=host --name=test-consul01 -v /opt/data/consul/:/data/consul -e CONSUL_BIND_INTERFACE=ens160 consul
+```
