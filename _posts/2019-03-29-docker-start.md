@@ -35,6 +35,6 @@ docker run --name redis -p 6379:6379 -v /opt/data/redis:/data -d --restart=alway
 ## memcache
 
 ```shell
-docker run --name memcache -d --restart=always memcached memcached -p 11211:11211 -m 512
+docker run --name memcache -p 11211:11211 -d --restart=always memcached memcached -m 512
 ```
 
