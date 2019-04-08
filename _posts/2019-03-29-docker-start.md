@@ -29,7 +29,7 @@ docker run --name mysql -p 3306:3306 -v /opt/data/mysql:/var/lib/mysql -e MYSQL_
 ## Redis
 
 ```shell
-docker run --name redis -p 6379:6379 -d --restart=always redis:latest redis-server --appendonly yes --requirepass "redis123456qwe"
+docker run --name redis -p 6379:6379 -v /opt/data/redis:/data -d --restart=always redis:latest redis-server --appendonly yes --requirepass "redis123456qwe"
 ```
 
 ## memcache
