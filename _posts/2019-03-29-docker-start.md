@@ -42,3 +42,8 @@ docker run --name memcache -p 11211:11211 -d --restart=always memcached memcache
 ```shell
 docker run -d --net=host --name=test-consul01 -v /opt/data/consul/:/data/consul -e CONSUL_BIND_INTERFACE=ens160 consul
 ```
+
+## pgsql
+```shell
+docker run --name postgresql -p 5432:5432 -v /opt/postgresql/:/var/lib/postgresql/data -e "POSTGRES_USER=kong" -e "POSTGRES_DB=kong" -e "MYSQL_ROOT_PASSWORD=kong123" -d postgres
+```
