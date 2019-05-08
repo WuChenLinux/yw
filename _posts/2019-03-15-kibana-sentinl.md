@@ -118,11 +118,26 @@ sentinl:
         "body": {
           "query": {
             "bool": {
-              "must": {
-                "match": {
-                  "level": "ERROR"
+              "must": [
+                {
+                  "match": {
+                    "level": {
+                      "query": "ERROR"
+                    }
+                  }
+                },
+                {
+                  "bool": {
+                    "must_not": [
+                      {
+                        "match": {
+                          "message": "ErrorScene^_^"
+                        }
+                      }
+                    ]
+                  }
                 }
-              },
+              ],
               "filter": {
                 "range": {
                   "@timestamp": {
