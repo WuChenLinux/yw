@@ -23,7 +23,7 @@ tags: Docker
 ## MySQL
 
 ```shell
-docker run --name mysql -p 3306:3306 -v /opt/data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=qwfakjklk123456 -d mysql:5.7
+docker run --name mysql --cap-add=SYS_TIME -p 3306:3306 -v /opt/data/mysql:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=qwfakjklk123456 -d mysql:5.7
 ```
 
 ## Redis
