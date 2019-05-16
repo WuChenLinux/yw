@@ -76,6 +76,7 @@ logstash：[官方if示例](https://www.elastic.co/guide/en/elastic-stack-get-st
 **看logstash的日志输出也行**
 
 **去看kibana的索引字段都有哪些也行**
+**consumer_threads 最好要和Kafka的分区数保持一致**
 
 ```shell
 #######################配置从Kafka输入###########################################
