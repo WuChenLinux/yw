@@ -56,3 +56,12 @@ curl -XGET 10.1.1.47:9200/pro-json-finance-2019.06.12/_settings?pretty
 
 
 PS: 解析json一定要事先和开发人员确认好字段类型，不然坑太大了
+
+查看集群中不同节点，不同索引的状态
+```shell
+GET _cat/shards?h=index,shard,prirep,state,unassigned.reason
+```
+副本置为1
+```shell
+curl -XPUT "http://localhost:9200/_settings" -d' { "number_of_replicas" : 0 } '
+```
