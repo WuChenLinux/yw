@@ -48,6 +48,11 @@ docker run -d --net=host --name=test-consul01 -v /opt/data/consul/:/data/consul 
 docker run --name postgresql -p 5432:5432 -v /opt/postgresql/:/var/lib/postgresql/data -e "POSTGRES_USER=kong" -e "POSTGRES_DB=kong" -e "MYSQL_ROOT_PASSWORD=kong123" -d postgres
 ```
 
+## konga
+```shell
+docker run -d -p 1337:1337 --network {{kong-network}} -e "TOKEN_SECRET={{somerandomstring}}" -e "DB_ADAPTER=postgres" -e "DB_HOST=172.27.83.61" -e "DB_PORT=5432" -e "DB_USER=kong" -e "DB_PASSWORD=kong" -e "DB_DATABASE=wuchen-konga" -e "NODE_ENV=development" --name konga pantsel/konga
+```
+
 ## elasticsearch
 ```shell
 docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -v /opt/elasticsearch/data/:/usr/share/elasticsearch/data  docker.elastic.co/elasticsearch/elasticsearch:7.3.1
