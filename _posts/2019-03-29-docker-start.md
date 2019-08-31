@@ -50,7 +50,7 @@ docker run --name postgresql -p 5432:5432 -v /opt/postgresql/:/var/lib/postgresq
 
 ## konga
 ```shell
-docker run -d -p 1337:1337 --network {{kong-network}} -e "TOKEN_SECRET={{somerandomstring}}" -e "DB_ADAPTER=postgres" -e "DB_HOST=172.27.83.61" -e "DB_PORT=5432" -e "DB_USER=kong" -e "DB_PASSWORD=kong" -e "DB_DATABASE=wuchen-konga" -e "NODE_ENV=development" --name konga pantsel/konga
+docker run -d -p 1337:1337  -e "DB_ADAPTER=postgres" -e "DB_HOST=172.27.83.61" -e "DB_PORT=5432" -e "DB_USER=kong" -e "DB_PASSWORD=kong" -e "DB_DATABASE=wuchen-konga" -e "NODE_ENV=development" --name konga pantsel/konga
 ```
 
 ## elasticsearch
