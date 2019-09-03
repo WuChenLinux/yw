@@ -136,7 +136,7 @@ function LuckService:access(conf)
         kong.log("luck is : ", luck)
         local weight = LuckTable["v2_"..(channel).."_weight"]
         kong.log("channel weight is : ", channel, ":",weight)
-        kong.log("luck is : ", luck)
+
         if luck <= weight then     
             rt_version = "v2"
             red:set(imei,"v2")
