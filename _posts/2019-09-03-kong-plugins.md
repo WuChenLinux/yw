@@ -221,3 +221,19 @@ return {
 > 配置使用konga， 然后测试的话 就多测就完事了
 
 ![1567509146890](https://wuchen-1252812685.cos.ap-shanghai.myqcloud.com/img/2019-09-03/1567509146890.png)
+
+### 生产
+
+> 因为生产环境是k8s，然后kong这边又不想单独给挂个盘，所以直接弄成配置文件挂载进去就好了
+
+```yaml
+
+         volumeMounts:
+            - mountPath: /mnt
+              name: volume-1564450826736
+            - mountPath: /usr/local/share/lua/5.1/kong/constants.lua
+              name: volume-1567501801119
+              subPath: constants.lua
+            - mountPath: /usr/local/share/lua/5.1/kong/plugins/http-service/
+              name: volume-1567502147319
+```
