@@ -96,9 +96,9 @@ function LuckService:access(conf)
     }
 
 
-    if(imei == nil) then
+    if(imei == nil or channel == nil ) then
         ngx.status = 200
-        ngx.say("Please give me a imei !") 
+        ngx.say("Please give me a imei or channel !") 
         return ngx.exit(200)
     end
 
