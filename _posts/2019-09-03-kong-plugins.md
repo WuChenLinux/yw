@@ -236,4 +236,18 @@ return {
               subPath: constants.lua
             - mountPath: /usr/local/share/lua/5.1/kong/plugins/http-service/
               name: volume-1567502147319
+              
+      volumes:
+        - hostPath:
+            path: /opt/logs/pre-kong/
+            type: ''
+          name: volume-1564450826736
+        - configMap:
+            defaultMode: 420
+            name: constants.lua
+          name: volume-1567501801119
+        - configMap:
+            defaultMode: 420
+            name: handler.lua
+          name: volume-1567502147319
 ```
