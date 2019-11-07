@@ -21,6 +21,8 @@ tags: Docker
 #### 删除过时镜像
 
 ```shell
+docker rmi $(docker images |grep artemis-server |awk '{print $3}')
+#或
 for i in $(docker images |grep xxxxx |awk '{print $2}' ); do docker rmi registry.cn-hangzhou.aliyuncs.com/xxxx/xxxxx:$i; done
 ```
 
