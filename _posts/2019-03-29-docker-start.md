@@ -72,3 +72,8 @@ docker run -d -p 9090:9090 -v /opt/data/prometheus:/prometheus -v /opt/config/pr
 ```shell
 docker run -d -p 9100:9100 -v "/proc:/host/proc:ro" -v "/sys:/host/sys:ro" -v "/:/rootfs:ro" --name=node-exporter prom/node-exporter
 ```
+
+## grafana
+```shell
+docker run -d -p 3000:3000 --restart=always -v /opt/data/grafana:/var/lib/grafana --name=grafana grafana/grafana
+```
