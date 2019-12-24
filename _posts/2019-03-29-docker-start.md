@@ -57,3 +57,13 @@ docker run -d -p 1337:1337  -e "DB_ADAPTER=postgres" -e "DB_HOST=172.27.83.61" -
 ```shell
 docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -v /opt/elasticsearch/data/:/usr/share/elasticsearch/data  docker.elastic.co/elasticsearch/elasticsearch:7.3.1
 ```
+
+## cadvisor
+```shell
+docker run --volume=/:/rootfs:ro --volume=/var/run:/var/run:rw --volume=/sys:/sys:ro --volume=/var/lib/docker/:/var/lib/docker:ro --publish=8080:8080 --detach=true --name=cadvisor google/cadvisor
+```
+
+## prometheus
+```shell
+docker run -d -p 9090:9090 -v /opt/data/prometheus:/prometheus -v /opt/config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --name=prometheus prom/prometheus
+```
