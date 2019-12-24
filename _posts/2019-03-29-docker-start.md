@@ -77,3 +77,9 @@ docker run -d -p 9100:9100 --restart=always -v "/proc:/host/proc:ro" -v "/sys:/h
 ```shell
 docker run -d -p 3000:3000 --restart=always -v /opt/data/grafana:/var/lib/grafana --name=grafana grafana/grafana
 ```
+
+## portainer
+```shell
+docker run -d -p 9000:9000 -p 8000:8000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /opt/data/portainer/:/data portainer/portainer
+```
+
