@@ -67,3 +67,8 @@ docker run --volume=/:/rootfs:ro --volume=/var/run:/var/run:rw --volume=/sys:/sy
 ```shell
 docker run -d -p 9090:9090 -v /opt/data/prometheus:/prometheus -v /opt/config/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml --name=prometheus prom/prometheus
 ```
+
+## node-exporter
+```shell
+docker run -d -p 9100:9100 -v "/proc:/host/proc:ro" -v "/sys:/host/sys:ro" -v "/:/rootfs:ro" --name=node-exporter prom/node-exporter
+```
