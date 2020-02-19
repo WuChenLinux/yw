@@ -45,7 +45,7 @@ docker run -d --net=host --name=test-consul01 -v /opt/data/consul/:/data/consul 
 
 ## pgsql
 ```shell
-docker run --name postgresql -p 5432:5432 -v /opt/postgresql/:/var/lib/postgresql/data -e "POSTGRES_USER=kong" -e "POSTGRES_DB=kong" -e "MYSQL_ROOT_PASSWORD=kong123" -d postgres
+ docker run --name postgresql -p 5432:5432 -v /opt/postgresql/:/var/lib/postgresql/data -e "POSTGRES_USER=sonar" -e "POSTGRES_DB=sonar" -e "POSTGRES_PASSWORD=sonar@2020" -d postgres
 ```
 
 ## konga
