@@ -90,13 +90,13 @@ openssl pkcs12 -export -clcerts -inkey kubecfg.key -in kubecfg.crt -out kubecfg.
 
 ~~~
 
-- - 访问
+- 访问
 
   ~~~http
   https://172.27.83.23:6443/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
   ~~~
 
-  - 令牌登录方式
+- 令牌登录方式
 
   ~~~bash
   # 获取令牌密码
